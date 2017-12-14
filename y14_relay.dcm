@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Y14_Relay
+D Y14 Series Relay
+K Single Pole Relay
+F http://www.hsinda.com.cn/en/ProductShow.asp?ID=208
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,300 @@
+EESchema Schematic File Version 2
+LIBS:relays_base-rescue
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:Relay
+LIBS:Connector
+LIBS:y14_relay
+LIBS:relays_base-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_NMOS_SGD Q1
+U 1 1 5A327C24
+P 5150 5000
+F 0 "Q1" V 5200 5150 50  0000 L CNN
+F 1 "Q_NMOS_SGD" V 5100 5150 50  0000 L CNN
+F 2 "" H 5350 5100 50  0001 C CNN
+F 3 "" H 5150 5000 50  0001 C CNN
+	1    5150 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5A327DB6
+P 4900 5150
+F 0 "#PWR6" H 4900 4900 50  0001 C CNN
+F 1 "GND" H 4900 5000 50  0000 C CNN
+F 2 "" H 4900 5150 50  0001 C CNN
+F 3 "" H 4900 5150 50  0001 C CNN
+	1    4900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR7
+U 1 1 5A327E0C
+P 4900 3750
+F 0 "#PWR7" H 4900 3600 50  0001 C CNN
+F 1 "+12V" H 4900 3890 50  0000 C CNN
+F 2 "" H 4900 3750 50  0001 C CNN
+F 3 "" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A328042
+P 4900 4900
+F 0 "R2" V 4980 4900 50  0000 C CNN
+F 1 "1K" V 4900 4900 50  0000 C CNN
+F 2 "" V 4830 4900 50  0001 C CNN
+F 3 "" H 4900 4900 50  0001 C CNN
+	1    4900 4900
+	-1   0    0    1   
+$EndComp
+Text GLabel 4100 5100 2    39   Input ~ 0
+SIG1
+Text GLabel 4100 5000 2    39   Input ~ 0
+SIG2
+Text GLabel 4100 4900 2    39   Input ~ 0
+SIG3
+Text GLabel 5250 4750 2    39   Input ~ 0
+SIG1
+$Comp
+L Conn_01x04 J4
+U 1 1 5A328E82
+P 3900 5000
+F 0 "J4" H 3900 5200 50  0000 C CNN
+F 1 "Conn_01x04" H 3900 4700 50  0000 C CNN
+F 2 "" H 3900 5000 50  0001 C CNN
+F 3 "" H 3900 5000 50  0001 C CNN
+	1    3900 5000
+	-1   0    0    1   
+$EndComp
+Text GLabel 4100 4800 2    39   Input ~ 0
+SIG4
+$Comp
+L R R1
+U 1 1 5A328F5A
+P 4300 3850
+F 0 "R1" V 4380 3850 50  0000 C CNN
+F 1 "1K" V 4300 3850 50  0000 C CNN
+F 2 "" V 4230 3850 50  0001 C CNN
+F 3 "" H 4300 3850 50  0001 C CNN
+	1    4300 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J2
+U 1 1 5A329119
+P 3900 3950
+F 0 "J2" H 3900 4050 50  0000 C CNN
+F 1 "Conn_01x02" H 3900 3750 50  0000 C CNN
+F 2 "" H 3900 3950 50  0001 C CNN
+F 3 "" H 3900 3950 50  0001 C CNN
+	1    3900 3950
+	-1   0    0    1   
+$EndComp
+Text GLabel 5350 5100 2    39   Input ~ 0
+DRAIN1
+Text GLabel 4800 4200 0    39   Input ~ 0
+DRAIN1
+Text GLabel 4100 3950 2    39   Input ~ 0
+DRAIN1
+$Comp
+L +12V #PWR5
+U 1 1 5A329678
+P 4500 3850
+F 0 "#PWR5" H 4500 3700 50  0001 C CNN
+F 1 "+12V" H 4500 3990 50  0000 C CNN
+F 2 "" H 4500 3850 50  0001 C CNN
+F 3 "" H 4500 3850 50  0001 C CNN
+	1    4500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J3
+U 1 1 5A32A784
+P 3900 4350
+F 0 "J3" H 3900 4550 50  0000 C CNN
+F 1 "Conn_01x03" H 3900 4150 50  0000 C CNN
+F 2 "" H 3900 4350 50  0001 C CNN
+F 3 "" H 3900 4350 50  0001 C CNN
+	1    3900 4350
+	-1   0    0    1   
+$EndComp
+Text GLabel 5650 4000 2    39   Input ~ 0
+NC1
+Text GLabel 5650 3900 2    39   Input ~ 0
+NO1
+Text GLabel 4100 4350 2    39   Input ~ 0
+COM1
+Text GLabel 4100 4450 2    39   Input ~ 0
+NO1
+Text GLabel 4100 4250 2    39   Input ~ 0
+NC1
+$Comp
+L Conn_01x02 J5
+U 1 1 5A32B4EB
+P 2650 3700
+F 0 "J5" H 2650 3800 50  0000 C CNN
+F 1 "Conn_01x02" H 2650 3500 50  0000 C CNN
+F 2 "" H 2650 3700 50  0001 C CNN
+F 3 "" H 2650 3700 50  0001 C CNN
+	1    2650 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR1
+U 1 1 5A32B549
+P 3000 3600
+F 0 "#PWR1" H 3000 3450 50  0001 C CNN
+F 1 "+12V" H 3000 3740 50  0000 C CNN
+F 2 "" H 3000 3600 50  0001 C CNN
+F 3 "" H 3000 3600 50  0001 C CNN
+	1    3000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5A32B572
+P 3000 3700
+F 0 "#PWR2" H 3000 3450 50  0001 C CNN
+F 1 "GND" H 3000 3550 50  0000 C CNN
+F 2 "" H 3000 3700 50  0001 C CNN
+F 3 "" H 3000 3700 50  0001 C CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5A32BA28
+P 2650 4250
+F 0 "J1" H 2650 4350 50  0000 C CNN
+F 1 "Conn_01x02" H 2650 4050 50  0000 C CNN
+F 2 "" H 2650 4250 50  0001 C CNN
+F 3 "" H 2650 4250 50  0001 C CNN
+	1    2650 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR3
+U 1 1 5A32BA2E
+P 3000 4150
+F 0 "#PWR3" H 3000 4000 50  0001 C CNN
+F 1 "+12V" H 3000 4290 50  0000 C CNN
+F 2 "" H 3000 4150 50  0001 C CNN
+F 3 "" H 3000 4150 50  0001 C CNN
+	1    3000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5A32BA34
+P 3000 4250
+F 0 "#PWR4" H 3000 4000 50  0001 C CNN
+F 1 "GND" H 3000 4100 50  0000 C CNN
+F 2 "" H 3000 4250 50  0001 C CNN
+F 3 "" H 3000 4250 50  0001 C CNN
+	1    3000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Y14_Relay K?
+U 1 1 5A32C74A
+P 5350 4150
+F 0 "K?" H 5300 4600 50  0000 L CNN
+F 1 "Y14_Relay" H 5175 4525 50  0000 L CNN
+F 2 "Relays_THT:Y14H_Series_Relay" H 5375 3750 50  0001 C CNN
+F 3 "" H 4650 3500 50  0001 C CNN
+	1    5350 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 4450 2    39   Input ~ 0
+COM1
+$Comp
+L D D?
+U 1 1 5A32C90E
+P 4900 4000
+F 0 "D?" H 4900 4100 50  0000 C CNN
+F 1 "D" H 4900 3900 50  0000 C CNN
+F 2 "" H 4900 4000 50  0001 C CNN
+F 3 "" H 4900 4000 50  0001 C CNN
+	1    4900 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3850 4150 3850
+Wire Wire Line
+	4450 3850 4500 3850
+Wire Wire Line
+	4900 4750 5250 4750
+Wire Wire Line
+	5150 4750 5150 4800
+Connection ~ 5150 4750
+Wire Wire Line
+	4900 5050 4900 5150
+Wire Wire Line
+	4900 5100 4950 5100
+Connection ~ 4900 5100
+Wire Wire Line
+	2850 3600 3000 3600
+Wire Wire Line
+	3000 3700 2850 3700
+Wire Wire Line
+	2850 4150 3000 4150
+Wire Wire Line
+	3000 4250 2850 4250
+Wire Wire Line
+	5650 4450 5800 4450
+Wire Wire Line
+	5650 4350 5700 4350
+Wire Wire Line
+	5700 4350 5700 4450
+Connection ~ 5700 4450
+Wire Wire Line
+	4800 4200 5050 4200
+Wire Wire Line
+	4900 3750 4900 3850
+Wire Wire Line
+	4900 4150 4900 4200
+Connection ~ 4900 4200
+Wire Wire Line
+	5050 4100 5050 3800
+Wire Wire Line
+	5050 3800 4900 3800
+Connection ~ 4900 3800
+$EndSCHEMATC

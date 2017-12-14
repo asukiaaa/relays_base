@@ -1,0 +1,283 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:Relay
+LIBS:Connector
+LIBS:y14_relay
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_NMOS_SGD Q1
+U 1 1 5A327C24
+P 6350 5350
+F 0 "Q1" V 6400 5500 50  0000 L CNN
+F 1 "Q_NMOS_SGD" V 6300 5500 50  0000 L CNN
+F 2 "" H 6550 5450 50  0001 C CNN
+F 3 "" H 6350 5350 50  0001 C CNN
+	1    6350 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Y14_Relay K1
+U 1 1 5A327D1B
+P 6400 4200
+F 0 "K1" V 5800 4100 50  0000 L CNN
+F 1 "Y14_Relay" V 5900 4050 50  0000 L CNN
+F 2 "Relays_THT:Y14H_Series_Relay" H 7375 4150 50  0001 C CNN
+F 3 "" H 5700 3550 50  0001 C CNN
+	1    6400 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5A327DB6
+P 6100 5500
+F 0 "#PWR6" H 6100 5250 50  0001 C CNN
+F 1 "GND" H 6100 5350 50  0000 C CNN
+F 2 "" H 6100 5500 50  0001 C CNN
+F 3 "" H 6100 5500 50  0001 C CNN
+	1    6100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR7
+U 1 1 5A327E0C
+P 7000 3900
+F 0 "#PWR7" H 7000 3750 50  0001 C CNN
+F 1 "+12V" H 7000 4040 50  0000 C CNN
+F 2 "" H 7000 3900 50  0001 C CNN
+F 3 "" H 7000 3900 50  0001 C CNN
+	1    7000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A328042
+P 6100 5250
+F 0 "R2" V 6180 5250 50  0000 C CNN
+F 1 "1K" V 6100 5250 50  0000 C CNN
+F 2 "" V 6030 5250 50  0001 C CNN
+F 3 "" H 6100 5250 50  0001 C CNN
+	1    6100 5250
+	-1   0    0    1   
+$EndComp
+Text GLabel 3900 4450 2    39   Input ~ 0
+SIG1
+Text GLabel 3900 4350 2    39   Input ~ 0
+SIG2
+Text GLabel 3900 4250 2    39   Input ~ 0
+SIG3
+Text GLabel 6450 5100 2    39   Input ~ 0
+SIG1
+$Comp
+L Conn_01x04 J4
+U 1 1 5A328E82
+P 3700 4350
+F 0 "J4" H 3700 4550 50  0000 C CNN
+F 1 "Conn_01x04" H 3700 4050 50  0000 C CNN
+F 2 "" H 3700 4350 50  0001 C CNN
+F 3 "" H 3700 4350 50  0001 C CNN
+	1    3700 4350
+	-1   0    0    1   
+$EndComp
+Text GLabel 3900 4150 2    39   Input ~ 0
+SIG4
+$Comp
+L R R1
+U 1 1 5A328F5A
+P 4100 3200
+F 0 "R1" V 4180 3200 50  0000 C CNN
+F 1 "1K" V 4100 3200 50  0000 C CNN
+F 2 "" V 4030 3200 50  0001 C CNN
+F 3 "" H 4100 3200 50  0001 C CNN
+	1    4100 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A328FF3
+P 6850 4050
+F 0 "R3" V 6930 4050 50  0000 C CNN
+F 1 "1K" V 6850 4050 50  0000 C CNN
+F 2 "" V 6780 4050 50  0001 C CNN
+F 3 "" H 6850 4050 50  0001 C CNN
+	1    6850 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J2
+U 1 1 5A329119
+P 3700 3300
+F 0 "J2" H 3700 3400 50  0000 C CNN
+F 1 "Conn_01x02" H 3700 3100 50  0000 C CNN
+F 2 "" H 3700 3300 50  0001 C CNN
+F 3 "" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	-1   0    0    1   
+$EndComp
+Text GLabel 6550 5450 2    39   Input ~ 0
+DRAIN1
+Text GLabel 6100 4050 0    39   Input ~ 0
+DRAIN1
+Text GLabel 3900 3300 2    39   Input ~ 0
+DRAIN1
+$Comp
+L +12V #PWR5
+U 1 1 5A329678
+P 4300 3200
+F 0 "#PWR5" H 4300 3050 50  0001 C CNN
+F 1 "+12V" H 4300 3340 50  0000 C CNN
+F 2 "" H 4300 3200 50  0001 C CNN
+F 3 "" H 4300 3200 50  0001 C CNN
+	1    4300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J3
+U 1 1 5A32A784
+P 3700 3700
+F 0 "J3" H 3700 3900 50  0000 C CNN
+F 1 "Conn_01x03" H 3700 3500 50  0000 C CNN
+F 2 "" H 3700 3700 50  0001 C CNN
+F 3 "" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	-1   0    0    1   
+$EndComp
+Text GLabel 6100 3900 0    39   Input ~ 0
+NC1
+Text GLabel 6700 3900 2    39   Input ~ 0
+NO1
+Text GLabel 6100 4500 0    39   Input ~ 0
+IN1
+Text GLabel 6700 4500 2    39   Input ~ 0
+IN1
+Text GLabel 3900 3700 2    39   Input ~ 0
+IN1
+Text GLabel 3900 3800 2    39   Input ~ 0
+NO1
+Text GLabel 3900 3600 2    39   Input ~ 0
+NC1
+$Comp
+L Conn_01x02 J5
+U 1 1 5A32B4EB
+P 3700 4900
+F 0 "J5" H 3700 5000 50  0000 C CNN
+F 1 "Conn_01x02" H 3700 4700 50  0000 C CNN
+F 2 "" H 3700 4900 50  0001 C CNN
+F 3 "" H 3700 4900 50  0001 C CNN
+	1    3700 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR1
+U 1 1 5A32B549
+P 4050 4800
+F 0 "#PWR1" H 4050 4650 50  0001 C CNN
+F 1 "+12V" H 4050 4940 50  0000 C CNN
+F 2 "" H 4050 4800 50  0001 C CNN
+F 3 "" H 4050 4800 50  0001 C CNN
+	1    4050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5A32B572
+P 4050 4900
+F 0 "#PWR2" H 4050 4650 50  0001 C CNN
+F 1 "GND" H 4050 4750 50  0000 C CNN
+F 2 "" H 4050 4900 50  0001 C CNN
+F 3 "" H 4050 4900 50  0001 C CNN
+	1    4050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5A32BA28
+P 3700 5450
+F 0 "J1" H 3700 5550 50  0000 C CNN
+F 1 "Conn_01x02" H 3700 5250 50  0000 C CNN
+F 2 "" H 3700 5450 50  0001 C CNN
+F 3 "" H 3700 5450 50  0001 C CNN
+	1    3700 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR3
+U 1 1 5A32BA2E
+P 4050 5350
+F 0 "#PWR3" H 4050 5200 50  0001 C CNN
+F 1 "+12V" H 4050 5490 50  0000 C CNN
+F 2 "" H 4050 5350 50  0001 C CNN
+F 3 "" H 4050 5350 50  0001 C CNN
+	1    4050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5A32BA34
+P 4050 5450
+F 0 "#PWR4" H 4050 5200 50  0001 C CNN
+F 1 "GND" H 4050 5300 50  0000 C CNN
+F 2 "" H 4050 5450 50  0001 C CNN
+F 3 "" H 4050 5450 50  0001 C CNN
+	1    4050 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3200 3950 3200
+Wire Wire Line
+	4250 3200 4300 3200
+Wire Wire Line
+	7000 3900 7000 4050
+Wire Wire Line
+	6100 5100 6450 5100
+Wire Wire Line
+	6350 5100 6350 5150
+Connection ~ 6350 5100
+Wire Wire Line
+	6100 5400 6100 5500
+Wire Wire Line
+	6100 5450 6150 5450
+Connection ~ 6100 5450
+Wire Wire Line
+	3900 4800 4050 4800
+Wire Wire Line
+	4050 4900 3900 4900
+Wire Wire Line
+	3900 5350 4050 5350
+Wire Wire Line
+	4050 5450 3900 5450
+$EndSCHEMATC
