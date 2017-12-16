@@ -24,12 +24,7 @@ F1 "Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
 S -50 -95 0 -105 1 1 6 N
@@ -37,32 +32,6 @@ S -50 5 0 -5 1 1 6 N
 S -50 50 50 -150 1 1 10 f
 X Pin_1 1 -200 0 150 R 50 50 1 1 P
 X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Conn_01x03
-#
-DEF Conn_01x03 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Conn_01x03" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 150 50 -150 1 1 10 f
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -74,12 +43,7 @@ F1 "Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
 S -50 -195 0 -205 1 1 6 N
@@ -91,6 +55,31 @@ X Pin_1 1 -200 100 150 R 50 50 1 1 P
 X Pin_2 2 -200 0 150 R 50 50 1 1 P
 X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x05
+#
+DEF Conn_01x05 J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Conn_01x05" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -250 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -130,6 +119,34 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# Jumper_NO_Small
+#
+DEF Jumper_NO_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Jumper_NO_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# PWR_FLAG
+#
+DEF PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X pwr 1 0 0 0 U 50 50 0 0 w
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+ENDDRAW
+ENDDEF
+#
 # Q_NMOS_SGD
 #
 DEF Q_NMOS_SGD Q 0 0 Y N 1 F N
@@ -162,11 +179,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R
+# R-RESCUE-relays_base
 #
-DEF R R 0 0 N Y 1 F N
+DEF R-RESCUE-relays_base R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R" 0 0 50 V V C CNN
+F1 "R-RESCUE-relays_base" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -180,12 +197,12 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Y14_Relay
+# Y14
 #
-DEF Y14_Relay K 0 40 Y Y 1 F N
+DEF Y14 K 0 40 Y Y 1 F N
 F0 "K" -50 450 50 H V L CNN
-F1 "Y14_Relay" -175 375 50 H V L CNN
-F2 "Relays_THT:Relay_Y14" 25 -400 50 H I C CNN
+F1 "Y14" -75 375 50 H V L CNN
+F2 "Relay_THT:Relay_Y14" 25 -400 50 H I C CNN
 F3 "" -700 -650 50 H I C CNN
 DRAW
 P 4 0 0 0 -100 75 -100 125 -75 100 -100 75 N
